@@ -144,5 +144,48 @@ Notice that the creator of this content has already a written step by step of th
 
 #### 6.5. It´s helpful to set a border and style it to see what we are doing
 
+    .header{
+
+        //border & height styles
+        border: 2px solid red;
+        height: 10%;
+
+        display: flex;
+        flex-direction: row;
+
+        &__logo {}
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+        }
+
+    }
+
+    .main {
+
+        //border & height styles
+        border: 2px solid black;
+        height: 80%;
+
+
+        &__image {}
+
+        &__text {}
+
+    }
+
+    .footer {
+
+        //border & height styles
+        border: 2px solid green;
+        height: 10%;
+
+
+        //a way to nested all the footer childrens (img's) for to Make them smallest 
+        [class ^="footer__"] {}
+
+    }
+
 
 

@@ -92,6 +92,44 @@ Notice that the creator of this content has already a written step by step of th
         </div>
 
 ### 6. Now it's time to build in SASS
+#### 6.1. Deleting the default window browser style
+    * {
+        //Placing margin to left and right
+        margin: 0px 5px;
+
+        padding: 0px;
+        box-sizing: border-box;
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+#### 6.2. Setting a style for the window
+
+    .container{
+        height: 100vh;
+        display: flex; 
+        flex-direction: column;
+      }
+
+#### 6.3. Nesting all the class and his childrens
+
+    .header{
+        &__logo {}
+        &__menu {}
+    }
+
+    .main {
+        &__image {}
+        &__text {}
+    }
+
+    .footer { 
+        //a way to nested all the footer childrens (img's) for to Make them smallest 
+        [class ^="footer__"] {}
+    }
+
+
 
 
  

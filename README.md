@@ -112,7 +112,7 @@ Notice that the creator of this content has already a written step by step of th
         flex-direction: column;
       }
 
-#### 6.3. Nesting all the class and his childrens
+#### 6.3. Nesting all the divs class and his childrens
 
     .header{
         &__logo {}
@@ -129,7 +129,20 @@ Notice that the creator of this content has already a written step by step of th
         [class ^="footer__"] {}
     }
 
+#### 6.4. Applying display flex and his direction to see like a row the header and his menu
+
+    .header{     
+        display: flex;
+        flex-direction: row;
+
+        &__logo {}
+        &__menu {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+#### 6.5. It´s helpful to set a border and style it to see what we are doing
 
 
 
- 

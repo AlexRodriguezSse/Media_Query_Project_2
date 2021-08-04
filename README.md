@@ -142,7 +142,7 @@ Notice that the creator of this content has already a written step by step of th
         }
     }
 
-#### 6.5. It´s helpful to set a border and style it to see what we are doing
+#### 6.5. It´s helpful to set a border and style it to see what we are doing, it's setup is temporary
 
     .header{
 
@@ -168,7 +168,6 @@ Notice that the creator of this content has already a written step by step of th
         border: 2px solid black;
         height: 80%;
 
-
         &__image {}
 
         &__text {}
@@ -181,11 +180,40 @@ Notice that the creator of this content has already a written step by step of th
         border: 2px solid green;
         height: 10%;
 
-
         //a way to nested all the footer childrens (img's) for to Make them smallest 
         [class ^="footer__"] {}
 
     }
+#### 6.6. Adding the image into main
+      //Image & text will act like a row
+        display: flex;
+        flex-direction: row;
+        
+       //border & height styles   
+        border: 2px solid black;
+        height: 80%;
+
+    &__image {
+        //Adding the image
+        background-image: url("./Imágenes/Alex_1.jpg");
+        // will cover half of screen width
+        width: 50%;
+
+        //make image fluid
+        background-size: contain;
+
+        //stop image repetition
+        background-repeat: no-repeat;
+
+        //position the image
+        background-position: left center;
+    }
+
+   
+
+        
+
+
 
 
 

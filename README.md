@@ -209,9 +209,65 @@ Notice that the creator of this content has already a written step by step of th
         background-position: left center;
     }
 
-   
-
+#### 6.8. Styling the text
+    &__text {
+        // will cover half of screen width
+        width: 50%;
+        display: flex;
+        flex-direction: column;
         
+        // To bring it at the center
+        justify-content: center;
+        align-items:center;
+
+        //To add gaps between texts vertically
+        gap: 15px;
+
+        //Font size for Hello
+            &-1{
+                font-size: 10vw;
+            }
+        
+        //Font size for the other texts
+        &-2, &-3, &-4{
+            font-size: 5vw;
+        }
+
+        //To color the name
+            span {
+                color: red;
+            }
+    }
+   
+### 6.9. The Footer Section
+#### 6.9.1. Resizing the Images
+
+    //a way to nested all the footer childrens (img's) for to Make them smallest 
+    [class ^="footer__"] {
+        img {
+            width: 5.3vw;
+        }
+    }
+
+#### 6.9.2. Positioning the images
+    display: flex;
+    flex-direction: row;
+
+    //To align icons along x-axis
+    align-items: center;
+
+    //Placing image to the right side
+    justify-content: flex-end;
+
+    //Gap between icons
+    gap: 20px;
+
+    //margin to right side of icons
+    margin-right: 10%;
+
+    //to separate the footer from the main
+    padding-top: 5vw;
+
 
 
 

@@ -268,6 +268,66 @@ Notice that the creator of this content has already a written step by step of th
     //to separate the footer from the main
     padding-top: 5vw;
 
+## 7. The Mobile Layout
+### 7.1. Media Query at 650px
+#### 7.1.1. Header
+    .header {
+        //To place logo at center
+        justify-content: center;
+
+        &__logo {
+            font-size: 30px;
+        }
+
+        //hiding the menu at mobile device
+        &__menu {
+            display: none;
+        }
+    }
+#### 7.1.2. Main
+##### 7.1.2.1. Image
+         &__image {
+            //Image size
+                height: 200px;
+                width: 200px;
+                background-size: 100%;
+
+            //To have rounded image
+                border-radius: 100%;
+                background-position: center;
+            }
+        }
+##### 7.1.2.2. Text
+    &__text {
+        width: 100%;
+
+        &-1 {
+            display: none;
+        }
+
+        &-2, &-3, &-4 {
+            font-size: 30px;
+        }
+    }
+
+#### 7.1.3. Footer
+    .footer {
+        //placing icons along the X-axis
+        justify-content: center;
+        margin: 0px;
+
+        [class ^="footer__"] {
+
+    //Resizing images for mobile layout
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+
+
+
 
 
 

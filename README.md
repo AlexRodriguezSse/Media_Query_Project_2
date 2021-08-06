@@ -1,4 +1,5 @@
 # Media_Query_Project_2
+### https://alexrodriguezsse.github.io/Media_Query_Project_2/
 A begginer project to understand how to apply MediaQuery Source (https://www.youtube.com/watch?v=aook54SsfhY&t=3077s)
 
 ### What I used?
